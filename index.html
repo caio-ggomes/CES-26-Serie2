@@ -1,0 +1,29 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css">
+  </head>
+
+  <body>
+    <h1>
+      <img src='images/airplane.jpg' height='50px' id='airplane' style='display: none'>
+      <img src='images/missile.jpg' height='50px' id='missile' style='display: none'>
+      <img src='images/explosion.png' height='50px' id='explosion' style='display: none'>
+    </h1>
+    <h2>Aluno: Caio Graça Gomes</h2>
+    <h3>Turma: COMP-22</h3>
+    <button id='turn_audio' onclick="turnAudio()" type = 'button'>
+      Desabilitar Áudio
+    </button>
+    <br><br>
+    <audio id="explosion_audio">
+      <source src="https://opengameart.org/sites/default/files/audio_preview/8bit_bomb_explosion.wav.mp3" type="audio/mpeg">
+    </audio>
+    <canvas id='sky' width="800" height="600" style="border:2px solid blue">
+      Your browser does not support the HTML5 canvas tag.
+    </canvas>
+    <div id="debug"></div>
+    <script src="lib/script.js"></script>
+  </body>
+</html>
